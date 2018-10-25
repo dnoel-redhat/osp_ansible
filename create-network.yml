@@ -1,0 +1,39 @@
+---
+- name: install network
+  hosts: localhost
+  connection: local
+
+  tasks: 
+  - name : Configuration of Public and Private Networks
+    os_network:
+      cloud: ospcloud
+      state: present 
+      name: ext_network
+      external: true
+
+  - name: Configuration of Subnets for Public and Private SubNets
+    os_subnet:
+      cloud: ospcloud
+      state: present
+      network_name: int_network
+      name: ext_subnet
+      cidr: "10.10.10.0/24"
+      dns_nameservers:
+        - 8.8.8.7
+        - 8.8.8.8
+      host_routes:
+        - destination: 0.0.0.0/0
+          nexthop: 10.10.10.0
+        - destination: 192.168.0.0/24
+          nexthop: 192.168.0.0
+
+  - name: Create Router
+    os_router:
+      cloud: ospcloud
+      state: present
+      name: router
+      network: ext_network
+      external_fixed_ips:
+        - { subnet: ext_subnet }
+      interfaces:
+        - int_subnet

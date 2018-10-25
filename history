@@ -1,0 +1,675 @@
+    1  iptables -L
+    2  netstat -n
+    3  ifconfig -a
+    4  ipa a
+    5  netstat -nr
+    6  ping 10.0.0.2
+    7  systemctl status sshd
+    8  systemctl restart sshd
+    9  systemctl start sshd
+   10  tail /var/log/messages 
+   11  systemctl status cloud-init
+   12  systemctl stop cloud-init
+   13  systemctl start sshd
+   14  ps -ef|grep sshd
+   15  systemctl disable cloud-init
+   16  poweroff
+   17  ps -ef|grep ssh
+   18  systemctl status sshd
+   19  systemctl status cloud-init
+   20  systemctl start sshd
+   21  systemctl stop cloud-init
+   22  systemctl start sshd
+   23  systemctl status cloud-init
+   24  systemctl |grep cloud-init
+   25  systemctl disable cloud-init-local
+   26  erboot
+   27  reboot
+   28  ps -ef|grep ssh
+   29  systemctl|grep cloud
+   30  systemctl|grep cloud-init
+   31  yum remove cloud-init
+   32  reboot
+   33  ps -ef|gep ssh
+   34  ps -ef|grep ssh
+   35  poweroff
+   36  yum repolist
+   37  cd /etc/yum.repos.d/
+   38  curl http://www.opentlc.com/download/rhel7.repo > open.repo
+   39  cat open.repo 
+   40  curl http://www.opentlc.com/scripts/rhel7.repo > open.repo
+   41  cat open.repo 
+   42  yum -y install ipa-client cloud-init
+   43  poweroff
+   44  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   45  reboot
+   46  yum update
+   47  vi /etc/ssh/sshd_config 
+   48  systemctl reload sshd
+   49  vi /etc/ssh/sshd_config 
+   50  ssh localhost
+   51  ls -al
+   52  cat .ssh/authorized_keys 
+   53  cat brezhnev-id_rsa.pub >> .ssh/authorized_keys 
+   54  cat .ssh/authorized_keys 
+   55  rm brezhnev-id_rsa.pub 
+   56  exit
+   57  df -h
+   58  ssh root@ctrl
+   59  ssh root@controller
+   60  ssh root@ctrl.example.com
+   61  ls -al
+   62  ls -al .ssh
+   63  ssh-keygen -t rsa
+   64  ll .ssh
+   65  ssh-copy-id ctrl.example.com
+   66  ssh ctrl.example.com
+   67  ssh comp00.example.com
+   68  ssh-copy-id comp00.example.com
+   69  ssh-copy-id comp01.example.com
+   70  ssh-copy-id net00.example.com
+   71  ssh-copy-id net01.example.com
+   72  exit
+   73  ssh-copy-id net02.example.com
+   74  vi /etc/ssh/sshd_config 
+   75  systemctl sshd reload
+   76  systemctl reload sshd
+   77  screen
+   78  yum install screen
+   79  screen
+   80  ssh root@
+   81  ssh root@192.168.0.20
+   82  screen -list
+   83  screen
+   84  vi /etc/ntp.conf 
+   85  systemctl enable ntpd
+   86  systemctl status firewalld
+   87  systemctl status iptables
+   88  iptables -L
+   89  screen
+   90  ssh root@192.168.0.20
+   91  ssh 192.168.0.50
+   92  screen
+   93  ssh 192.168.0.20
+   94  ssh 192.168.0.30
+   95  ssh 192.168.0.31
+   96  ssh 192.168.0.51
+   97  ssh 192.168.0.52
+   98  screen
+   99  ssh 192.168.0.20
+  100  screen
+  101  ssh 192.168.0.50
+  102  ssh 192.168.0.51
+  103  ssh 192.168.0.52
+  104  ssh 192.168.0.30
+  105  ssh 192.168.0.31
+  106  systemctl status ntpd
+  107  systemctl enable ntpd
+  108  systemctl start ntpd
+  109  screen
+  110  ip a
+  111  systemctl status ntpd
+  112  systemctl start ntpd
+  113  systemctl enable ntpd
+  114  ssh 192.168.0.20
+  115  screen
+  116  ssh 192.168.0.51
+  117  systemctl status ntpd
+  118  systemctl start ntpd
+  119  systemctl status ntpd
+  120  screen -x
+  121  screen 
+  122  ssh 192.168.0.20
+  123  ssh 192.168.0.50
+  124  rpm -q httpd
+  125  yum repolist
+  126  uname -r
+  127  yum install httpd
+  128  fdisk -l /dev/vdb1
+  129  mount
+  130  vi /etc/fstab
+  131  xfs_admin -h
+  132  xfs_admin -l /dev/vdb1
+  133  xfs_admin -u /dev/vdb1
+  134  xfs_admin -u /dev/vdb1 > /tmp/uu
+  135  vi /etc/fstab
+  136  fdisk /dev/vda
+  137  swapon 
+  138  swapon -s
+  139  swapon -a
+  140  df -h
+  141  mount 
+  142  mount /var/www/html/repos
+  143  mkdir  /var/www/html/repos
+  144  mount /var/www/html/repos
+  145  df -h
+  146  ls -al /var/www/html/repos/
+  147  chown -R root.root /var/www/html/repos/
+  148  cat /etc/redhat-release 
+  149  cat /etc/hosts
+  150  cat /etc/resolv.conf 
+  151  vi /etc/yum.repos.d/open.repo 
+  152  yum clear all
+  153  yum clear-all
+  154  yum clean all
+  155  yum repolist
+  156  systemctl start httpd
+  157  systemctl enable httpd
+  158  yum repolist
+  159  yum update
+  160  sync
+  161  yum clean all
+  162  reboot
+  163  yum clean all
+  164  rpm -qa | grep kernel
+  165  rpm -eh kernel-3.10.0-327.el7
+  166  rpm -qa | grep kernel
+  167  poweroff
+  168  cat .ssh/authorized_keys 
+  169  exit
+  170  ls -al
+  171  find / answers.txt 
+  172  find / -name answers.txt 
+  173  yum clean all
+  174  ll /var/lib/yum/yumdb/
+  175  exit
+  176  cd /var/lib/yum/repos/x86_64/7Server/
+  177  ll
+  178  exit
+  179  root@192.168.0.20
+  180  ssh root@192.168.0.20
+  181  ssh root@192.168.0.30
+  182  ssh root@192.168.0.31
+  183  ssh root@192.168.0.51
+  184  poweroff
+  185  ssh root@ctrl
+  186  ssh root@ctrl.example.com
+  187  ls
+  188  ssh ctrl.example.com
+  189  export GUID=`hostname | awk -F"." '{print $2}'`
+  190  $GUID
+  191  hostname
+  192  export GUID=`hostname | awk -F"." '{print $1}'`
+  193  $GUID
+  194  export GUID=7abf
+  195  $GUID
+  196  scp ctrl-${GUID}.rhpds.opentlc.com:/etc/yum.repos.d/open.repo /etc/yum.repos.d/open.repo
+  197  yum -y install python-openstackclient
+  198  pwd
+  199  scp ctrl.example.com:/root/keystonerc_admin /root/
+  200  ll
+  201  source keystonerc_admin 
+  202  openstack hypervisor list
+  203  pwd
+  204  wget http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+  205  cat openstack.pub  >> /home/cloud-user/.ssh/authorized_keys
+  206  yum install python-devel python-pi -y
+  207  yum install python-PROJECTclient -y
+  208  pip install python-openstackclient
+  209  vim clouds.yml
+  210  yum install vim -y
+  211  vim clouds.yml
+  212  cat << EOF > osp_image.yml
+  213  - hosts: localhost
+  214    become: yes
+  215    gather_facts: false
+  216    tasks:
+  217    - name: download RHEL image
+  218      get_url:
+  219        url: http://www.opentlc.com/download/osp_advanced_networking/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+  220        dest: /root/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+  221    - os_image:
+  222        cloud: ospcloud
+  223        name: rhel-guest
+  224        container_format: bare
+  225        disk_format: qcow2
+  226        state: present
+  227        filename: /root/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+  228  EOF
+  229  ll
+  230  ansible --version
+  231  yum -y install ansible
+  232  yum install -y git
+  233  ansible-playbook osp_image.yml 
+  234  yum -y install shade
+  235  ll
+  236  mv clouds.yml clouds.yaml 
+  237  yum install -y pipo
+  238  yum install -y pip
+  239  yum search shade
+  240  yum search pip
+  241  yum -y install `ls *epel*.rpm`
+  242  wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  243  yum -y install `ls *epel*.rpm`
+  244  yum install -y python python-devel python-pip gcc ansible
+  245  history 
+  246  pip install shade
+  247  ll
+  248  pip install shade
+  249  cd /tmp/pip-build-MPdgyF/os-service-types/
+  250  cd /tmp/
+  251  ll
+  252  cd -
+  253  ansible-playbook osp_image.yml 
+  254  rpm -qa | grep openstacksdk
+  255  yum remove python-openstacksdk-0.9.5-1.el7ost.noarch
+  256  yum install python-openstacksdk
+  257  yum install python-openstacksdk>=0.12.0
+  258  yum install python-openstacksDK
+  259  yum install python-openstacksdk
+  260  pip install shade --ignore-errors
+  261  pip install shade --ignore-installed
+  262  yum install python-openstacksdk git
+  263  ansible-playbook osp_image.yml 
+  264  pip install shade --ignore-installed
+  265  pip install --upgrade setuptools
+  266  pip install shade --ignore-installed
+  267  ansible-playbook osp_image.yml 
+  268  history 
+  269  ll
+  270  vim clouds.yaml 
+  271  ansible-playbook osp_image.yml 
+  272  vim clouds.yaml 
+  273  ll
+  274  mv clouds.yaml clouds.yaml.old
+  275  cat << EOF > /etc/openstack/clouds.yaml
+  276  clouds:
+  277    ospcloud:
+  278      auth:
+  279        auth_url: http://192.168.0.20:5000/
+  280        password: r3dh4t1!
+  281        project_name: admin
+  282        username: admin
+  283      identity_api_version: '3.0'
+  284      region_name: RegionOne
+  285  ansible:
+  286    use_hostnames: True
+  287    expand_hostvars: False
+  288    fail_on_errors: True
+  289  EOF
+  290  cat << EOF > /etc/openstack/clouds.yaml
+  291  clouds:
+  292    ospcloud:
+  293      auth:
+  294        auth_url: http://192.168.0.20:5000/
+  295        password: r3dh4t1!
+  296        project_name: admin
+  297        username: admin
+  298      identity_api_version: '3.0'
+  299      region_name: RegionOne
+  300  ansible:
+  301    use_hostnames: True
+  302    expand_hostvars: False
+  303    fail_on_errors: True
+  304  cat << EOF > /etc/openstack/clouds.yaml
+  305  clouds:
+  306    ospcloud:
+  307      auth:
+  308        auth_url: http://192.168.0.20:5000/
+  309        password: r3dh4t1!
+  310        project_name: admin
+  311        username: admin
+  312      identity_api_version: '3.0'
+  313      region_name: RegionOne
+  314  ansible:
+  315    use_hostnames: True
+  316    expand_hostvars: False
+  317    fail_on_errors: True
+  318  EOF
+  319  q
+  320  mkdir /etc/openstack
+  321  cat << EOF > /etc/openstack/clouds.yaml
+  322  clouds:
+  323    ospcloud:
+  324      auth:
+  325        auth_url: http://192.168.0.20:5000/
+  326        password: r3dh4t1!
+  327        project_name: admin
+  328        username: admin
+  329      identity_api_version: '3.0'
+  330      region_name: RegionOne
+  331  ansible:
+  332    use_hostnames: True
+  333    expand_hostvars: False
+  334    fail_on_errors: True
+  335  EOF
+  336  cd /etc/openstack/
+  337  ll
+  338  ansible-playbook clouds.yaml 
+  339  ll
+  340  mv clouds.yaml /root
+  341  ll
+  342  cd /root/
+  343  ll
+  344  diff clouds.yaml clouds.yaml.old
+  345  vim clouds.yaml
+  346  ansible-playbook clouds.yaml
+  347  ll
+  348  cat clouds.yaml.old
+  349  cat clouds.yaml
+  350  ll
+  351  vim clouds.yaml
+  352  vim clouds.yaml.old 
+  353  ansible-playbook clouds.yaml.old 
+  354  vim clouds.yaml
+  355  ll
+  356  ansible-playbook osp_image.yml 
+  357  ansible localhost -m os_auth -a cloud=ospcloud
+  358  ansible localhost -m os_user_facts -a cloud=ospcloud -v
+  359  ll
+  360  rm -rf clouds.yaml.old 
+  361  ll
+  362  git clone https://github.com/tonykay/good-ansible.git
+  363  ll
+  364  cd good-ansible/
+  365  ll
+  366  cd 3tier-good/
+  367  ll
+  368  cat hosts 
+  369  cd ..
+  370  ll
+  371  cd ..
+  372  ll
+  373  git clone https://github.com/dnoel-redhat/osp-ansible-lab.git
+  374  ll
+  375  cd osp-ansible-lab/
+  376  ll
+  377  cat site-osp-setup.yml 
+  378  ll roles/
+  379  ll
+  380  cd roles/
+  381  ll
+  382  cd osp-setup/
+  383  ll
+  384  cat tasks/
+  385  cat tasks/create-network.yml 
+  386  pwd
+  387  cd ../
+  388  ll
+  389  cd ../
+  390  ll
+  391  cd ../
+  392  ll
+  393  cp /root/osp-ansible-lab/roles/osp-setup/tasks/create-network.yml .
+  394  ll
+  395  cp /root/osp-ansible-lab/site-osp-setup.yml .
+  396  ll
+  397  cat site-osp-setup.yml 
+  398  cat /etc/ansible/hosts
+  399  ll
+  400  vim inventory
+  401  ll
+  402  cat site-osp-setup.yml 
+  403  vim inventory
+  404  vim ansible.cfg
+  405  ll
+  406  vim create-network.yml 
+  407  ansible-playbook create-network.yml 
+  408  vim create-network.yml 
+  409  ansible-playbook create-network.yml 
+  410  ll
+  411  cat site-osp-setup.yml 
+  412  vim create-network.yml 
+  413  ansible-playbook create-network.yml 
+  414  vim create-network.yml 
+  415  ansible-playbook create-network.yml 
+  416  vim create-network.yml 
+  417  ll
+  418  cd good-ansible/
+  419  ll
+  420  cd ..
+  421  ll
+  422  git clone https://github.com/prakhar1985/good_example.git
+  423  ll
+  424  rm -rf good-ansible/
+  425  ll
+  426  cd good_example/
+  427  ll
+  428  cd osp-example/
+  429  ll
+  430  cat osp_test_inventory 
+  431  ll
+  432  cat site.yaml 
+  433  vim site.yaml 
+  434  ll
+  435  ansible-playbook site.yaml 
+  436  vim roles/osp-network/tasks/main.yml 
+  437  ll
+  438  ll /etc/openstack/
+  439  cp /root/clouds.yaml /etc/openstack/
+  440  ll /etc/openstack/
+  441  ll
+  442  ansible-playbook site.yaml 
+  443  ll
+  444  git https://github.com/dnoel-redhat/my_ansible_project.git
+  445  git clone https://github.com/dnoel-redhat/my_ansible_project.git
+  446  ll
+  447  cp my_ansible_project/roles/ roles/
+  448  ll roles/
+  449  cp my_ansible_project/roles/* roles/
+  450  ll roles/
+  451  ll
+  452  cp -a my_ansible_project/roles/* roles/
+  453  ll roles
+  454  ll
+  455  cd my_ansible_project/
+  456  ll
+  457  cd ..
+  458  cp my_ansible_project/tier-application.yml .
+  459  ll
+  460  rm -rf my_ansible_project/
+  461  ll
+  462  cat tier-application.yml 
+  463  ll
+  464  vim site.yaml 
+  465  git clone https://github.com/dnoel-redhat/my_ansible_project.git
+  466  ll
+  467  cp my_ansible_project/open_three-tier-app.repo .
+  468  ll
+  469  ansible-playbook site.yaml 
+  470  vim site.yaml 
+  471  ansible-playbook site.yaml 
+  472  vim site.yaml 
+  473  ll
+  474  mv site.yaml site.yaml.old
+  475  cp site.yaml.old site.yml
+  476  vim site.yml 
+  477  mv site.yaml.old site.yaml
+  478  vim site.yaml
+  479  ansible-playbook site.yaml
+  480  vim site.yaml
+  481  ll
+  482  cd roles
+  483  ll
+  484  ansible-galaxy init enable-repos
+  485  ll
+  486  cd ..
+  487  ll
+  488  cat site.yaml
+  489  vim roles/enable-repos/tasks/main.yml 
+  490  ll
+  491  vim site.yaml 
+  492  ll roles/
+  493  git clone https://github.com/dnoel-redhat/my_ansible_project.git
+  494  ll
+  495  ansible-playbook site.yaml 
+  496  vim site.yaml
+  497  ansible-playbook site.yaml 
+  498  vim site.yaml
+  499  ansible-playbook site.yaml 
+  500  vim site.yaml
+  501  ansible-playbook site.yaml 
+  502  vim site.yaml
+  503  ll
+  504  cp -a roles/enable-repos my_ansible_project/roles/*
+  505  ll
+  506  cp site.yaml my_ansible_project/
+  507  ll
+  508  cd ..
+  509  ll
+  510  cd ..
+  511  ll
+  512  cd -
+  513  ll
+  514  cd osp-example/
+  515  ll
+  516  cd osp-example/
+  517  ll
+  518  cd good_example/
+  519  ll
+  520  cd osp-example/
+  521  ll
+  522  cat osp_test_inventory 
+  523  ansible-playbook site.yaml 
+  524  vim site.yaml 
+  525  ansible-playbook site.yaml --tags test_inventory
+  526  vim site.yaml 
+  527  ansible-playbook site.yaml 
+  528  ll
+  529  cp site.yaml tier.yml
+  530  vim tier.yml
+  531  ansible-playbook tier.yml 
+  532  vim tier.yml
+  533  ansible-playbook tier.yml 
+  534  ll
+  535  cd -
+  536  ll
+  537  cd -
+  538  cd /root/
+  539  ll
+  540  source keystonerc_admin
+  541  openstack server list
+  542  yum -y install openstack
+  543  yum install python-openstackclient -y
+  544  openstack server list
+  545  openstack server start db app2 app1 frontend
+  546  openstack server list
+  547  ssh 10.10.10.14
+  548  ll
+  549  cd good_example/
+  550  ll
+  551  cd osp-example/
+  552  ll
+  553  cd my_ansible_project/
+  554  ll
+  555  git add roles/*
+  556  git statuw
+  557  git status
+  558  git commit -a
+  559  git push
+  560  ll
+  561  ll roles/
+  562  cd ..
+  563  ll
+  564  cp -a roles/enable-repos/ my_ansible_project/roles/
+  565  ll
+  566  cat my_ansible_project/roles/app-servers/tasks/main.yml 
+  567  cat my_ansible_project/roles/app-servers/vars/main.yml 
+  568  ll
+  569  cd roles/
+  570  ll
+  571  cd app-servers/
+  572  ll
+  573  cd templates/
+  574  ll
+  575  cat index.html.app
+  576  cat index.html.app1
+  577  cat index.html.app2
+  578  ll
+  579  cat index.html.j2
+  580  cp index.html.j2 index.html.app.j2
+  581  ll
+  582  cd ..
+  583  ll
+  584  cd ll
+  585  cd ..
+  586  ll
+  587  vim app-servers/vars/main.yml 
+  588  ll
+  589  cd app-servers/templates/
+  590  ll
+  591  cat index.html.j2
+  592  cat index.html.app1
+  593  ll
+  594  vim index.html.app.j2 
+  595  rm index.html.app.j2 
+  596  cp index.html.app1 index.html.app.j2
+  597  vim index.html.app.j2
+  598  LL
+  599  ll
+  600  cd ..
+  601  ll
+  602  vim tasks/main.yml 
+  603  cat tasks/main.yml 
+  604  ll
+  605  vim tasks/main.yml 
+  606  ll
+  607  vim tasks/main.yml 
+  608  ll
+  609  cd templates/
+  610  ll
+  611  cd ..
+  612  ll
+  613  cd ..
+  614  ll
+  615  cd frontend/
+  616  ll
+  617  cd templates/
+  618  ll
+  619  vim haproxy.cfg.j2 
+  620  ll
+  621  cd ..
+  622  ll
+  623  cd ..
+  624  ll
+  625  cd ..
+  626  ll
+  627  cd my_ansible_project/
+  628  ll
+  629  git add roles/
+  630  git commit -a
+  631* 
+  632  ll
+  633  git add .
+  634  git commit -a
+  635  git pudh
+  636  git push
+  637  ll
+  638  cd ..
+  639  ll
+  640  cd -
+  641  ll
+  642  cd ..
+  643  ll
+  644  rm -rf my_ansible_project/
+  645  ll
+  646  cd ..
+  647  ll
+  648  cd osp-example/
+  649  ll
+  650  git add .
+  651  git commit -a
+  652  git push
+  653* ll
+  654  cat roles/enable-repos/tasks/main.yml 
+  655  ll
+  656  git push
+  657  cd ..
+  658  ll
+  659  cd ..
+  660  ll
+  661  git clone https://github.com/dnoel-redhat/osp_ansible.git
+  662  ll
+  663  mv * osp_ansible/
+  664  ll
+  665  cd osp_ansible/
+  666  ll
+  667  git add .
+  668  git commit -a
+  669  git push
+  670  ll
+  671  gzip rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+  672  ll
+  673  rm -rf rhel-guest-image-7.2-20151102.0.x86_64.qcow2.gz
+  674  ll
+  675  history > history

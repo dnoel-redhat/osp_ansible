@@ -1,0 +1,24 @@
+Loaded plugins: search-disabled-repos
+Resolving Dependencies
+--> Running transaction check
+---> Package python-openstacksdk.noarch 0:0.9.5-1.el7ost will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package            Arch   Version        Repository                       Size
+================================================================================
+Installing:
+ python-openstacksdk
+                    noarch 0.9.5-1.el7ost rhel-7-server-openstack-10-rpms 263 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 263 k
+Installed size: 1.4 M
+Is this ok [y/d/N]: Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2018-10-25.04-03.2cpmq0.yumtx
